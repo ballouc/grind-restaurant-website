@@ -9,6 +9,7 @@
   outline: none;
   --black: #000;
   --light: beige;
+  scroll-behavior: smooth;
 }
 
 html {
