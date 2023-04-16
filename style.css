@@ -91,9 +91,18 @@ li {
 .about-us-container {
   align-items: center;
   display: block;
-  left: 30%;
+  left: 20%;
   position: absolute;
-  padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.about-us-home-img {
+  width: 700px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-us-home-button {
