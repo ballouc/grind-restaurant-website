@@ -268,3 +268,8 @@ input[type="checkbox"] {
   width: 100%;
   align-items: center;
 }
+
+.grind-footer p {
+  padding-left: 8.5em;
+  padding-right: 8.5em;
+}
