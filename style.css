@@ -281,3 +281,12 @@ input[type="checkbox"] {
   padding-left: 8.5em;
   padding-right: 8.5em;
 }
+
+.grind-footer i {
+  font-size: 24px;
+  padding-left 4em;
+}
+
+.grind-footer i:hover {
+  color: burlywood;
+}
