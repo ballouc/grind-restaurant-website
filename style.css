@@ -1,0 +1,245 @@
+/* Styling for the entire site. */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  --black: #000;
+  --light: beige;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  color: var(--light);
+}
+
+/* Navigation Bar stylings */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--black);
+  color: var(--light);
+}
+
+.logo {
+  font-size: 32px;
+  color: beige;
+}
+
+.nav-links a {
+  color: var(--light);
+}
+
+/* Navigation Bar Pages */
+.pages {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.pages li:hover {
+  background-color: aliceblue;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.pages li {
+  padding: 5px 14px;
+}
+
+/* Navigation Bar Dropdown */
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: brown;
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: violet;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+/* Checkbox Hack */
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* Headliner */
+.headliner {
+  display: flex;
+  height: 500px;
+  border-bottom: 5px solid var(--black);
+}
+
+/* Left Side */
+.headliner-left {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headliner-img-container {
+  height: 500px;
+  width: 750px;
+  overflow: hidden;
+}
+
+.headliner-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right Side */
+.headliner-right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 200px;
+}
+
+/* Grind Logo on Headliner */
+.headliner-grind {
+  margin-bottom: 10px;
+  font-size: 7.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  user-select: none;
+}
+
+.headliner-button {
+  width: 250px;
+  padding: 10px;
+  background-color: #64e8ff;
+  border: none;
+  color: black;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.headliner-button:hover {
+  background-color: rgb(46, 181, 253);
+  transition: 0.3s ease-in-out;
+}
+
+/* Applying Media Queries */
+
+/* Navigation Bar */
+@media (max-width: 768px) {
+  .pages {
+    display: none;
+    position: absolute;
+    background-color: var(--black);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    animation: growDown 300ms ease-in-out fowards;
+    transform-origin: top center;
+  }
+  /* Animation for Mobile Dropdown */
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  .pages li:hover {
+    display: inline-block;
+    background-color: var(--black);
+    transition: 0.3s ease;
+  }
+
+  .pages li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .pages {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    text-transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: var(--black);
+  }
+}
+
+/* Adjusting the Headliner for smaller resolutions */
+@media (max-width: 1200px) {
+  .headliner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* When the resolution is below 1200px, alter the appearance. */
+}
+
+/* Footer */
+.grind-footer {
+  background-color: var(--black);
+  color: var(--light);
+  padding: 1em;
+  text-align: center;
+  line-height: 1.5;
+}
