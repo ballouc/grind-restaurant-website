@@ -319,6 +319,7 @@ input[type="checkbox"] {
 
 .grind-footer i {
   font-size: 24px;
+  cursor: pointer;
 }
 
 .grind-footer i:hover {
