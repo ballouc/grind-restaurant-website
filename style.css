@@ -40,7 +40,7 @@ li {
   object-fit: cover;
   top: 0;
   left: 0;
-  filter: blur(10px);
+  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1'%3E%3CfeGaussianBlur stdDeviation='4' result='b'/%3E%3CfeMorphology operator='dilate' radius='4'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E%3C/svg%3E#a");
 }
 .home-top-logo-container {
   position: absolute;
@@ -52,8 +52,8 @@ li {
 }
 
 .home-top-logo {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 
 .home-top-button-container {
@@ -62,22 +62,20 @@ li {
 }
 
 .top-button {
-  background-color: transparent;
-  border: 2.5px solid var(--black);
+  background-color: moccasin;
+  border: 2px solid var(--black);
   color: black;
-  padding: 10px 20px;
+  padding: 10px 5px;
   text-align: center;
   text-decoration: none;
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   margin: 10px auto;
-  cursor: pointer;
-  width: 250px;
-  border-radius: 10px;
+  width: 200px;
   user-select: none;
 }
 .top-button:hover {
-  background-color: rgb(245, 202, 86);
+  background-color: burlywood;
   transition: 0.4s ease;
 }
 
