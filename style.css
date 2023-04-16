@@ -25,6 +25,21 @@ li {
   color: var(--light);
 }
 
+.home-top-img-container {
+  position: relative;
+  overflow: auto;
+}
+
+.home-top-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* Navigation Bar stylings */
 .navbar {
   display: flex;
