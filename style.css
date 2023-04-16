@@ -25,6 +25,14 @@ li {
   color: var(--light);
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  display: none;
+}
+
 .home-top-img-container {
   display: block;
   width: 100%;
