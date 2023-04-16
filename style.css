@@ -304,11 +304,17 @@ input[type="checkbox"] {
   display: inline-flex;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
 }
 
-.grind-footer p {
-  padding-left: 8.5em;
-  padding-right: 8.5em;
+.grind-footer .footer-text {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.grind-footer .footer-text p{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .grind-footer i {
