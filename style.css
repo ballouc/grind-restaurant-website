@@ -25,9 +25,13 @@ li {
   color: var(--light);
 }
 
-.home-top-img-container {
-  position: relative;
-  overflow: auto;
+.home-top-img.container {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 0 0;
 }
 
 .home-top-img {
